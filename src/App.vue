@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome Hp to my page"/>
+    <header>
+      <span>Vue.js PWA</span>
+    </header>
+    <main>
+      <img src="./assets/logo.png" alt="Vue.js PWA" />
+      <HelloWorld msg="Vue.js Hello World" />
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld
   }
-}
+};
 </script>
 
 <style>
